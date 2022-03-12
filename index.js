@@ -14,7 +14,8 @@ let viewSelected
 
 const clientID = process.env.CLIENT_ID
 const clientSecret = process.env.CLIENT_SECRET
-const callbackURL = 'http://localhost:3000/login/google/return'
+//const callbackURL = 'http://localhost:3000/login/google/return'
+const callbackURL = 'https://google-analytics-project.herokuapp.com/login/google/return'
 const oauth2Client = new google.auth.OAuth2(clientID, clientSecret, callbackURL)
 const url = oauth2Client.generateAuthUrl({
 	access_type: 'online',
